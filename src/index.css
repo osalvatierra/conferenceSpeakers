@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #252525;
+  font-weight: 400;
+  background-color: #f7f2e9;
+  border-bottom: 1.6rem solid #edc84b;
+  min-height: 100vh;
+  padding: 3.2rem;
+  padding-bottom: 6rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: block;
+
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  font-size: 1.5rem;
+}
+.list li {
+  display: grid;
+  grid-template-columns: 6.8rem 1fr auto;
+}
+
+.header {
+  align-self: stretch;
+}
+.header h1::before,
+.header h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 4rem;
+  background-color: #edc84b;
+  position: absolute;
+  /* top: calc(50% - 1px); */
+}
+
+.header h1::before {
+  left: 0;
+}
+
+.header h1::after {
+  right: 0;
+}
+
+.header h1 {
+  color: #edc84b;
+  /* color: #af8602; */
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.profileNum {
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 3em;
+}
